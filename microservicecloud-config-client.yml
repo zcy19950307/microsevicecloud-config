@@ -18,6 +18,19 @@ eureka:
   client: #客户端注册进eureka服务列表
    service-url:   #defaultZone: http://eureka7001:7001/eureka/  单机版是，现在是集群看下面配置
       defaultZone: http://eureka-dev.com:7001/eureka/ # 自定义服务器名称信息    
-   
-   
  
+ 
+--- 
+server:
+  port: 8202
+
+spring:
+  profiles: test  #测试环境
+  application:
+    name: microsevicecloud-config-client
+    
+eureka:
+  client: #客户端注册进eureka服务列表
+   service-url:   #defaultZone: http://eureka7001:7001/eureka/  单机版是，现在是集群看下面配置
+      defaultZone: http://eureka-test.com:7001/eureka/ # 自定义服务器名称信息       
+  
