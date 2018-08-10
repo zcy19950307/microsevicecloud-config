@@ -1,0 +1,49 @@
+
+eureka:
+  instance:
+    hostname:  eureka7001.com           #  localhost 单机版d aneureka服务端实例名称   这个 是域名
+  client:
+    register-with-eureka: false #false 表示不想注册中心注册自己
+    fetch-registry:  false  # false 表示自己就是注册中心，我的职业就是维护服务实例，不需要检索服务
+    service-url:
+        #单机版 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka   设置与Eureka Server呼叫的地址查询服务和注册服务
+      defaultZone: http://eureka7001.com:7001/eureka/ #设置与Eureka Server呼叫的地址查询服务和注册服务
+
+---
+server:
+  port: 7001 #注册中心占用了7001 ,冒号后面必须给与空格
+
+
+spring:
+  profiles: test
+  application:
+    name: microservicecloud-config-dept-client
+    
+    
+    
+      
+eureka:
+  instance:
+    hostname:  eureka7001.com           #  localhost 单机版d aneureka服务端实例名称   这个 是域名
+  client:
+    register-with-eureka: false #false 表示不想注册中心注册自己
+    fetch-registry:  false  # false 表示自己就是注册中心，我的职业就是维护服务实例，不需要检索服务
+    service-url:
+        #单机版 defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka   设置与Eureka Server呼叫的地址查询服务和注册服务
+      defaultZone: http://eureka7001.com:7001/eureka/ #设置与Eureka Server呼叫的地址查询服务和注册服务
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
