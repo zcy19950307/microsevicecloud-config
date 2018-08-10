@@ -8,11 +8,11 @@ spring:
 spring:
   profiles: dev  #开发环境
   application:
-    name: microsevicecloud-config-auguigu-dev
+    name: microsevicecloud-config-auguigu-dev-dd
     
    
 ---
 spring:
   profiles: test  #开发环境
   application:
-    name: microsevicecloud-config-auguigu-test 
+    name: microsevicecloud-config-auguigu-test-vv 
